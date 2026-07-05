@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Karissa Holt">
-    <meta name="description" content="">
-    <title>Document</title>
+    <meta name="description"
+        content="Home page for Karissa Holt's WDD 231 course portfolio featuring information about me, completed web certificate courses, and class projects.">
+    <title>WDD231 | Karissa Holt</title>
     <!-- Fonts -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -20,7 +21,7 @@
     <header>
         <img src="images/tree-sapling.svg" alt="site logo" width="200" height="200">
         <span>Karissa Holt</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
@@ -34,18 +35,26 @@
         <div class="card-container">
             <section class="card">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorum eligendi consequuntur
-                    doloremque sequi voluptate nesciunt laborum fugit, odio non explicabo exercitationem, id expedita.
-                    Magnam saepe culpa nulla ipsum quisquam nostrum iure atque nam eligendi harum error, incidunt
-                    explicabo illum dolorum facere sed. Dolores voluptatum eveniet facere eius dolorum quod.</p>
+                <p>Hi! My name is Karissa Holt, and I live in Utah. I am currently working toward my Software
+                    Development degree through BYU-Pathway. Before starting this program, I had very little experience
+                    with coding, but I've enjoyed learning something completely new and watching my confidence grow.
+                    When I'm not working on school, I enjoy spending time with my husband and our four kids. I also love
+                    family history and volunteering at the FamilySearch Center. My goal is to continue learning and
+                    eventually use my programming skills to work with FamilySearch.</p>
             </section>
             <section class="card">
                 <h2>Student Photo</h2>
-                <img src="images/karissa-holt.jpg" alt="image of Karissa Holt">
+                <img src="images/karissa-holt.jpg" alt="image of Karissa Holt" width="200" height="267">
             </section>
             <section class="card courses">
                 <h2>Web Certificate Courses</h2>
-                <!-- web courses -->
+                <div class="buttons">
+                    <button id="all">All</button>
+                    <button id="wdd">WDD</button>
+                    <button id="cse">CSE</button>
+                </div>
+                <div id="course-list"></div>
+                <p id="credits"></p>
             </section>
         </div>
     </main>

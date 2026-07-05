@@ -28,9 +28,15 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    color: #3D405b;
+    color: #3D405B;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: .4rem;
+    border-radius: 6px;
+}
+
+.hamburger:hover {
+    background-color: #ede3ff;
 }
 
 .hamburger::before {
@@ -47,7 +53,7 @@ header span {
 .navigation {
     display: none;
     padding: 10px;
-    background-color: #222;
+    background-color: rgb(64, 2, 64);
 }
 
 .navigation.show {
@@ -69,11 +75,11 @@ header span {
 }
 
 .navigation li.current {
-    background-color: rgb(111, 109, 109);
+    background-color: rgb(3, 99, 96);
 }
 
 .navigation a:hover {
-    background-color: rgb(240, 197, 240);
+    background-color: #7440a5;
 }
 
 
@@ -94,7 +100,7 @@ h1 {
 }
 
 .card h2 {
-    background-color: #222;
+    background-color: rgb(64, 2, 64);
     color: white;
     text-align: center;
     margin: 0;
@@ -108,9 +114,63 @@ h1 {
 .card img {
     display: block;
     margin: 1rem auto;
+    padding: 1rem;
+    width: 200px;
+    height: auto;
 }
 
+#course-list {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
 
+#course-list p {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+#course-list p.completed {
+    background-color: #ede3ff;
+    border: 2px solid #7b4bb7;
+    border-radius: 8px;
+}
+
+.not-completed {
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.buttons button {
+    flex: 1;
+    background-color: rgb(3, 99, 96);
+    color: white;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #7440a5;
+}
+
+#credits {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
 
 
 
@@ -120,6 +180,7 @@ footer {
     padding: 1rem 10px;
     text-align: center;
 }
+
 .social {
     display: flex;
     justify-content: center;
