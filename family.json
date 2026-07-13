@@ -1,0 +1,38 @@
+{
+    "familyName": "Holt",
+    "moveInDate": "2018-09-02",
+    "numberOfPeople": 6,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "Evzton Holt",
+            "gender": "male",
+            "birthdate": "1977-03-04"
+        },
+        {
+            "name": "Karissa Holt",
+            "gender": "female",
+            "birthdate": "1980-10-23"
+        },
+        {
+            "name": "Tristan Holt",
+            "gender": "male",
+            "birthdate": "2011-01-11"
+        },
+        {
+            "name": "Evander Holt",
+            "gender": "male",
+            "birthdate": "2012-02-06"
+        },
+        {
+            "name": "Azaleah Holt",
+            "gender": "female",
+            "birthdate": "2013-07-16"
+        },
+        {
+            "name": "Dreydan Holt",
+            "gender": "male",
+            "birthdate": "2015-12-01"
+        }
+    ]
+}
