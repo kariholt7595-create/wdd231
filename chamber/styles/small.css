@@ -12,9 +12,16 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
+}
+
+h1,
+h2,
+header span,
+button {
+    font-family: "Poppins", sans-serif;
 }
 
 header {
