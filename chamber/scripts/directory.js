@@ -59,6 +59,8 @@ function displayMembers(members) {
 
         membersContainer.appendChild(card);
     });
+
+    membersContainer.classList.remove("loading");
 }
 
 gridButton.addEventListener("click", () => {
