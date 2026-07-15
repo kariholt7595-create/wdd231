@@ -4,69 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="author" content="Karissa Holt">
-    <meta name="description" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <title>Karissa Holt | Software Development Portfolio for WDD231</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <meta name="description"
+        content="Explore local businesses and services in the Salina, Utah Chamber of Commerce directory.">
+
+    <title>Business Directory | Salina Chamber of Commerce</title>
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Salina Chamber of Commerce Business Directory">
+    <meta property="og:description"
+        content="Discover local businesses, restaurants, services, and community resources in Salina, Utah.">
+    <meta property="og:image"
+        content="https://kariholt7595-create.github.io/wdd231/chamber/images/salina-chamber-logo.webp">
+    <meta property="og:url"
+        content="https://kariholt7595-create.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
+
+    <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
+
     <header>
-        <img src="images/tree-sapling.svg" alt="site logo" width="200" height="200">
-        <span>Karissa Holt</span>
-        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <img src="images/salina-chamber-logo.webp"
+            alt="Salina Chamber of Commerce mountain and highway logo"
+            width="100"
+            height="100">
+
+        <span>Salina Chamber of Commerce</span>
+
+        <button id="menu-button" aria-label="Open navigation menu"></button>
     </header>
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber Project</a></li>
-            <li><a href="#">Final Project</a></li>
-        </ul>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Join</a>
     </nav>
+
     <main>
-        <h1>Home</h1>
-        <div class="card-container">
-            <section class="card">
-                <h2>About Me</h2>
-                <p>Hi! My name is Karissa Holt, and I live in Utah. I am currently working toward my Software
-                    Development degree through BYU-Pathway. Before starting this program, I had very little experience
-                    with coding, but I've enjoyed learning something completely new and watching my confidence grow.
-                    When I'm not working on school, I enjoy spending time with my husband and our four kids. I also love
-                    family history and volunteering at the FamilySearch Center. My goal is to continue learning and
-                    eventually use my programming skills to work with FamilySearch.</p>
-            </section>
-            <section class="card">
-                <h2>Student Photo</h2>
-                <img src="images/karissa-holt.jpg" alt="image of Karissa Holt" width="200" height="267">
-            </section>
-            <section class="card courses">
-                <h2>Web Certificate Courses</h2>
-                <div class="buttons">
-                    <button id="all">All</button>
-                    <button id="wdd">WDD</button>
-                    <button id="cse">CSE</button>
-                </div>
-                <div id="course-list"></div>
-                <p id="credits"></p>
-            </section>
+        <h1>Business Directory</h1>
+
+        <div class="view-buttons">
+            <button id="grid-button">Grid View</button>
+            <button id="list-button">List View</button>
         </div>
+
+        <section id="members" class="grid"></section>
+        
     </main>
+
     <footer>
-        <div class="social">
+        <div class="contact-info">
+            <p><strong>Salina Chamber of Commerce</strong></p>
+            <p>Salina, Utah 84654</p>
+            <p>info@salinachamber.org</p>
+            <p>(435) 000-0000</p>
+        </div>
+
+        <div class="social-links">
             <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
                     height="16"></a>
             <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="github" width="16"
@@ -76,9 +85,15 @@
             <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16"
                     height="16"></a>
         </div>
-        <p>&copy;<span id="currentyear"></span> 🌸 Karissa Holt 🌸 Utah</p>
-        <p id="lastModified"></p>
+
+        <div class="development-info">
+            <p>WDD 231 Class Project</p>
+            <p>Karissa Holt</p>
+            <p>&copy; <span id="current-year"></span> Salina Chamber of Commerce</p>
+            <p id="last-modified"></p>
+        </div>
     </footer>
+
 </body>
 
 </html>

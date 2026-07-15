@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Mom's Cafe",
+        "address": "10 East Main Street, Salina, Utah",
+        "phone": "(435) 529-3921",
+        "website": "https://www.example.com",
+        "image": "moms-cafe.svg",
+        "membership": 3,
+        "category": "Restaurant"
+    },
+    {
+        "name": "Salina Family Pharmacy",
+        "address": "Salina, Utah",
+        "phone": "(435) 000-0000",
+        "website": "https://www.example.com",
+        "image": "salina-family-pharmacy.svg",
+        "membership": 2,
+        "category": "Pharmacy"
+    },
+    {
+        "name": "Barrett's Market",
+        "address": "Salina, Utah",
+        "phone": "(435) 000-0000",
+        "website": "https://www.example.com",
+        "image": "barretts-market.svg",
+        "membership": 3,
+        "category": "Grocery Store"
+    },
+    {
+        "name": "Family Dollar",
+        "address": "Salina, Utah",
+        "phone": "(435) 000-0000",
+        "website": "https://www.example.com",
+        "image": "family-dollar.svg",
+        "membership": 1,
+        "category": "Retail"
+    },
+    {
+        "name": "Arby's",
+        "address": "Salina, Utah",
+        "phone": "(435) 000-0000",
+        "website": "https://www.example.com",
+        "image": "arbys.svg",
+        "membership": 1,
+        "category": "Restaurant"
+    },
+    {
+        "name": "Subway",
+        "address": "Salina, Utah",
+        "phone": "(435) 000-0000",
+        "website": "https://www.example.com",
+        "image": "subway.svg",
+        "membership": 1,
+        "category": "Restaurant"
+    },
+    {
+        "name": "Zions Bank",
+        "address": "Salina, Utah",
+        "phone": "(435) 000-0000",
+        "website": "https://www.example.com",
+        "image": "zions-bank.svg",
+        "membership": 2,
+        "category": "Bank"
+    }
+]
