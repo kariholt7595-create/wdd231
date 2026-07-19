@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Karissa Holt">
+    <meta name="description"
+        content="Welcome to Salina City Chamber of Commerce. Find local events, weather information, and featured businesses in our community.">
+
+    <title>Home | Salina Chamber of Commerce</title>
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Salina Chamber of Commerce Home page">
+    <meta property="og:description"
+        content="Welcome to Salina City Chamber of Commerce. Find local events, weather information, and featured businesses in our community.">
+    <meta property="og:image"
+        content="https://kariholt7595-create.github.io/wdd231/chamber/images/salina-hero-image.jpg">
+    <meta property="og:url" content="https://kariholt7595-create.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<header>
+    <img src="images/salina-chamber-logo.webp" alt="Salina Chamber of Commerce mountain and highway logo" width="100"
+        height="100" fetchpriority="high">
+
+    <span>Salina Chamber of Commerce</span>
+
+    <button id="menu-button" aria-label="Open navigation menu"></button>
+</header>
+
+<nav id="navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="discover.html">Discover</a>
+    <a href="join.html">Join</a>
+</nav>
+
+<main>
+    <h1>Salina City Chamber of Commerce</h1>
+
+    <section class="hero">
+        <img src="images/salina-hero-image.jpg" alt="Balloons in the sky in Salina, Utah" width="1200" height="600">
+        <div class="hero-callout">
+            <h2>Support Salina Businesses</h2>
+            <p>Connect with local businesses and discover opportunities in our community</p>
+            <a class="join-button" href="join.html">Join the Chamber</a>
+        </div>
+    </section>
+
+    <div class="home-grid">
+        <section class="events">
+            <h2>Current Events</h2>
+
+            <div class="event-item">
+                <h3>Eyes to the Sky Balloon Festival</h3>
+                <p><strong>Date:</strong> June 26–27</p>
+                <p>Enjoy hot-air balloons, food vendors, live entertainment, and community activities.</p>
+            </div>
+
+            <div class="event-item">
+                <h3>Salina Main Street Market</h3>
+                <p><strong>Date:</strong> Saturday, August 8</p>
+                <p>Shop from local businesses, food vendors, and community booths.</p>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <p>Current Temperature: <span id="current-temp"></span></p>
+
+            <p>Weather: <span id="weather-description"></span></p>
+
+            <h3>Three-Day Forecast</h3>
+
+            <div id="forecast"></div>
+        </section>
+    </div>
+    <section class="spotlights">
+        <h2>Business Spotlights</h2>
+        <div id="spotlight-cards"></div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="contact-info">
+        <p><strong>Salina Chamber of Commerce</strong></p>
+        <p>Salina, Utah 84654</p>
+        <p>info@salinachamber.org</p>
+        <p>(435) 000-0000</p>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit Facebook"><img
+                src="images/facebook.svg" alt="Facebook icon" width="16" height="16"></a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Visit GitHub"><img
+                src="images/github.svg" alt="Github icon" width="16" height="16"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img
+                src="images/instagram.svg" alt="Instagram icon" width="16" height="16"></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Visit LinkedIn"><img
+                src="images/linkedin.svg" alt="LinkedIn icon" width="16" height="16"></a>
+    </div>
+
+    <div class="development-info">
+        <p>WDD 231 Class Project</p>
+        <p>Karissa Holt</p>
+        <p>&copy; <span id="current-year"></span> Salina Chamber of Commerce</p>
+        <p id="last-modified"></p>
+    </div>
+</footer>
+
+</body>
+
+</html>

@@ -54,4 +54,43 @@
     .development-info {
         text-align: right;
     }
+
+    /* Home Page */
+
+    .hero {
+        margin-bottom: 8.5rem;
+    }
+
+    .hero-callout {
+        left: 50%;
+        bottom: -8rem;
+        transform: translateX(-50%);
+        width: 70%;
+        max-width: 650px;
+        padding: 1rem 1.5rem;
+    }
+
+    .hero-callout h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    .hero-callout p {
+        margin: 0 0 0.75rem;
+        font-size: 1rem;
+    }
+
+    .join-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+    }
+
+    #spotlight-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
