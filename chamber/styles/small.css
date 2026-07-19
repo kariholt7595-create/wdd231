@@ -286,6 +286,10 @@ footer p {
     margin-top: 1rem;
 }
 
+.weather {
+    min-height: 300px;
+}
+
 .events,
 .weather {
     padding: 1rem;
@@ -302,6 +306,7 @@ footer p {
 
 .spotlights {
     margin: 1rem;
+    min-height: 400px;
 }
 
 .spotlights h2 {
