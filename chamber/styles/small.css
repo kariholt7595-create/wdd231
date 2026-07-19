@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0f2d52;
     --secondary-color: #2d5e59;
-    --accent-color: #d8b35a;
+    --accent-color: #e5be61;
     --accent-color2: #a8c2b7;
     --background-color: #f7f8f6;
     --text-color: #000000;
@@ -269,7 +269,7 @@ footer p {
     display: inline-block;
     padding: .6rem .9rem;
     background-color: var(--accent-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
