@@ -78,6 +78,8 @@ const courses = [
     }
 ]
 
+const courseDetails = document.querySelector("#course-details");
+
 function displayCourses(courseArray) {
     const container = document.getElementById("course-list");
     container.innerHTML = "";
@@ -91,13 +93,37 @@ function displayCourses(courseArray) {
             card.classList.add("completed");
         } else {
             card.textContent = `${course.subject} ${course.number}`;
-    }
+        }
+
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         container.appendChild(card);
     });
 
     const credits = courseArray.reduce((total, course) => total + course.credits, 0);
     document.querySelector("#credits").textContent = `The total credits for course listed above is ${credits}`;
+}
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id ="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technology:</strong> ${course.technology.join(", ")}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
 }
 
 const allButton = document.querySelector("#all");
