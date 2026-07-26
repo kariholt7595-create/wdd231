@@ -93,4 +93,16 @@
     #spotlight-cards {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .join-layout {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .membership-cards {
+        position: sticky;
+        top: 1rem;
+    }
 }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Karissa Holt">
+    <meta name="description"
+        content="Apply to join the Salina Chamber of Commerce. Explore our membership levels and choose the option that best supports your business or organization.">
+
+    <title>Join the Salina Chamber of Commerce</title>
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Join the Salina Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply to join the Salina Chamber of Commerce. Explore our membership levels and choose the option that best supports your business or organization.">
+    <meta property="og:image" content="https://kariholt7595-create.github.io/wdd231/chamber/images/YOUR-IMAGE-NAME">
+    <meta property="og:url" content="https://kariholt7595-create.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/salina-chamber-logo.webp" alt="Salina Chamber of Commerce mountain and highway logo"
+            width="100" height="100" fetchpriority="high">
+
+        <span>Salina Chamber of Commerce</span>
+
+        <button id="menu-button" aria-label="Open navigation menu"></button>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html" class="active">Join</a>
+    </nav>
+
+    <main>
+        <h1 class="form">Join the Salina Chamber of Commerce</h1>
+
+        <div class="join-layout">
+            <form class="join-form" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label>
+                        First Name
+                        <input type="text" name="first" required autocomplete="given-name"
+                            title="Enter your first name">
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="last" required autocomplete="family-name" title="Enter your last name">
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="organization-title" autocomplete="organization-title"
+                            title="Enter your organizational title using at least 7 letters, spaces, or hyphens"
+                            pattern="[A-Za-z -]{7,}">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label>
+                        Email Address
+                        <input type="email" name="email" required autocomplete="email" title="Enter your email address"
+                            placeholder="name@example.com">
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input type="tel" name="phone" required autocomplete="tel"
+                            title="Enter your mobile phone number">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+
+                    <label>
+                        Business/Organization Name
+                        <input type="text" name="organization" required autocomplete="organization"
+                            title="Enter the name of your business or organization">
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" title="Select a membership level" required>
+                            <option value="" disabled selected>
+                                Select a membership level
+                            </option>
+                            <option value="np">Nonprofit Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business/Organization Description
+                        <textarea name="description" title="Describe your business or organization" rows="6"></textarea>
+                    </label>
+                </fieldset>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Join the Salina Chamber of Commerce">
+            </form>
+
+            <section class="membership-cards">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-card">
+                    <h3>Nonprofit Membership</h3>
+                    <p>Designed for qualifying nonprofit organizations.</p>
+                    <button type="button" id="open-np">View Benefits</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Provides basic support and resources for small businesses.</p>
+                    <button type="button" id="open-bronze">View Benefits</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <p>Offers added visibility and opportunities to connect in the community.</p>
+                    <button type="button" id="open-silver">View Benefits</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <p>Includes premium promotion and greater recognition throughout the Chamber.</p>
+                    <button type="button" id="open-gold">View Benefits</button>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-modal">
+            <h2>Nonprofit Membership</h2>
+            <p>Cost: Free</p>
+
+            <h3>Benefits</h3>
+            <ul>
+                <li>Listing in the online business directory</li>
+                <li>Access to Chamber networking events</li>
+                <li>Volunteer and community partnership opportunities</li>
+                <li>Discounted rates for selected events</li>
+            </ul>
+
+            <button type="button" id="close-np">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership</h2>
+            <p>Cost: $100 per year</p>
+
+            <h3>Benefits</h3>
+            <ul>
+                <li>Listing in the online business directory</li>
+                <li>Access to Chamber networking events</li>
+                <li>Business name included in the Chamber newsletter</li>
+                <li>Discounted admission to selected events</li>
+            </ul>
+
+            <button type="button" id="close-bronze">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership</h2>
+            <p>Cost: $250 per year</p>
+
+            <h3>Benefits</h3>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Rotating spotlight on the Chamber home page</li>
+                <li>Additional event discounts</li>
+                <li>Quarterly advertisement in the Chamber newsletter</li>
+            </ul>
+
+            <button type="button" id="close-silver">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership</h2>
+            <p>Cost: $500 per year</p>
+
+            <h3>Benefits</h3>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Priority spotlight placement on the home page</li>
+                <li>Featured advertising at Chamber events</li>
+                <li>Priority registration and larger event discounts</li>
+            </ul>
+
+            <button type="button" id="close-gold">Close</button>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Salina Chamber of Commerce</strong></p>
+            <p>Salina, Utah 84654</p>
+            <p>info@salinachamber.org</p>
+            <p>(435) 000-0000</p>
+        </div>
+.
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit Facebook"><img
+                    src="images/facebook.svg" alt="Facebook icon" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Visit GitHub"><img
+                    src="images/github.svg" alt="Github icon" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img
+                    src="images/instagram.svg" alt="Instagram icon" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Visit LinkedIn"><img
+                    src="images/linkedin.svg" alt="LinkedIn icon" width="16" height="16"></a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Class Project</p>
+            <p>Karissa Holt</p>
+            <p>&copy; <span id="current-year"></span> Salina Chamber of Commerce</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

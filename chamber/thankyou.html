@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Karissa Holt">
+    <meta name="description"
+        content="Thank you for applying to join the Salina Chamber of Commerce. Your membership application has been successfully received.">
+
+    <title>Thank You | Salina Chamber of Commerce</title>
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Join the Salina Chamber of Commerce">
+    <meta property="og:description" content="Thank you for submitting your Chamber membership application.">
+    <meta property="og:image"
+        content="https://kariholt7595-create.github.io/wdd231/chamber/images/salina-chamber-logo.webp">
+    <meta property="og:url" content="https://kariholt7595-create.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/salina-chamber-logo.webp" alt="Salina Chamber of Commerce mountain and highway logo"
+            width="100" height="100" fetchpriority="high">
+
+        <span>Salina Chamber of Commerce</span>
+
+        <button id="menu-button" aria-label="Open navigation menu"></button>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Join</a>
+    </nav>
+
+<main>
+    <h1>Thank You for Joining!</h1>
+    <p>Your membership application has been received.</p>
+
+    <div id="results"></div>
+</main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Salina Chamber of Commerce</strong></p>
+            <p>Salina, Utah 84654</p>
+            <p>info@salinachamber.org</p>
+            <p>(435) 000-0000</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit Facebook"><img
+                    src="images/facebook.svg" alt="Facebook icon" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Visit GitHub"><img
+                    src="images/github.svg" alt="Github icon" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit Instagram"><img
+                    src="images/instagram.svg" alt="Instagram icon" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Visit LinkedIn"><img
+                    src="images/linkedin.svg" alt="LinkedIn icon" width="16" height="16"></a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Class Project</p>
+            <p>Karissa Holt</p>
+            <p>&copy; <span id="current-year"></span> Salina Chamber of Commerce</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
