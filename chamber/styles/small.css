@@ -419,7 +419,7 @@ footer p {
     display: block;
     margin-bottom: 1rem;
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .join-form input,
