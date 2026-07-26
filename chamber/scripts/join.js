@@ -54,24 +54,3 @@ closeSilver.addEventListener("click", () => {
 closeGold.addEventListener("click", () => {
     goldDialog.close();
 });
-
-
-
-const layoutShiftObserver = new PerformanceObserver((list) => {
-    list.getEntries().forEach((entry) => {
-        if (!entry.hadRecentInput) {
-            console.log("LAYOUT SHIFT:", entry.value);
-
-            entry.sources.forEach((source) => {
-                console.log("Shifted element:", source.node);
-                console.log("Before:", source.previousRect);
-                console.log("After:", source.currentRect);
-            });
-        }
-    });
-});
-
-layoutShiftObserver.observe({
-    type: "layout-shift",
-    buffered: true
-});
