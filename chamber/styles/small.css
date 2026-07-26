@@ -296,7 +296,7 @@ footer p {
     background-color: var(--background-color);
     border: 2px solid var(--secondary-color);
     border-radius: 8px;
-    border-left: 8px solid var(--secondary-color)
+    border-left: 8px solid var(--secondary-color);
 }
 
 .events h2,
@@ -440,7 +440,7 @@ footer p {
 .join-form select:focus,
 .join-form textarea:focus {
     outline: 3px solid var(--accent-color);
-    border-color: var(--primary-color)
+    border-color: var(--primary-color);
 }
 
 .join-form input[type="submit"] {
@@ -467,16 +467,6 @@ footer p {
 .membership-cards h2 {
     color: var(--primary-color);
     text-align: center;
-}
-
-.membership-card {
-    background-color: var(--accent-color2);
-    border: 2px solid #4f8b83;
-    border-left: 8px solid var(--accent-color);
-    border-radius: 12px;
-    padding: 1.25rem;
-    text-align: center;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
 }
 
 .membership-card h3 {
@@ -526,8 +516,14 @@ dialog button {
 }
 
 .membership-card {
+    background-color: var(--accent-color2);
+    border: 2px solid #4f8b83;
+    border-left: 8px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
     opacity: 0;
-    transform: translateY(30px);
     animation: cardAppear 0.8s ease-out forwards;
 }
 
@@ -550,11 +546,9 @@ dialog button {
 @keyframes cardAppear {
     from {
         opacity: 0;
-        transform: translateY(30px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
