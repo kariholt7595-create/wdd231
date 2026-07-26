@@ -383,6 +383,11 @@ footer p {
     margin: 0.35rem 0;
 }
 
+.join-page h1 {
+    text-align: left;
+    margin: 1rem 0 1.5rem;
+}
+
 .join-layout {
     display: grid;
     gap: 2rem;
