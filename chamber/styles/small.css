@@ -525,7 +525,7 @@ dialog button {
     cursor: pointer;
 }
 
-.membership-card {
+/* .membership-card {
     opacity: 0;
     transform: translateY(30px);
     animation: cardAppear 0.8s ease-out forwards;
@@ -556,5 +556,5 @@ dialog button {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
+    } */
 }
