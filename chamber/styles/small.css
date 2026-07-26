@@ -383,10 +383,6 @@ footer p {
     margin: 0.35rem 0;
 }
 
-main>h1 {
-    margin-left: 3.5rem;
-}
-
 .join-layout {
     display: grid;
     gap: 2rem;
@@ -395,10 +391,10 @@ main>h1 {
 
 .join-form {
     background-color: var(--background-color);
-    border: 2px solid 4f8b83;
+    border: 2px solid #4f8b83;
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 4px 10px rgb(0, 0, 0 / 15%);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
 }
 
 .join-form fieldset {
@@ -419,7 +415,6 @@ main>h1 {
     margin-bottom: 1rem;
     color: var(--primary-color);
     font-weight: 600;
-    margin-bottom: 1rem;
 }
 
 .join-form input,
@@ -525,7 +520,7 @@ dialog button {
     cursor: pointer;
 }
 
-/* .membership-card {
+.membership-card {
     opacity: 0;
     transform: translateY(30px);
     animation: cardAppear 0.8s ease-out forwards;
@@ -556,5 +551,5 @@ dialog button {
     to {
         opacity: 1;
         transform: translateY(0);
-    } */
+    }
 }
