@@ -100,7 +100,7 @@ img {
     max-width: 100%;
     margin: 1rem auto;
     border: 3px solid var(--secondary-color);
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 footer {
@@ -181,12 +181,6 @@ a:hover {
     width: 500px;
     max-width: 100%;
     height: auto;
-    margin: 1rem auto;
-}
-
-.mobile-wireframe,
-.desktop-wireframe {
-    display: block;
     margin: 1rem auto;
 }
 
