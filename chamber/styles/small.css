@@ -616,3 +616,10 @@ dialog button {
     width: 100%;
     display: block;
 }
+
+#visit-message {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}

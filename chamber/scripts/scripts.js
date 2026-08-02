@@ -1,4 +1,4 @@
-import {places} from "../data/places.mjs";
+import { places } from "../data/places.mjs";
 
 const cards = document.querySelector("#cards");
 
@@ -22,7 +22,7 @@ places.forEach((place, index) => {
     } else {
         image.loading = "lazy";
     }
-    
+
     button.textContent = "Learn More";
 
     figure.appendChild(image);
