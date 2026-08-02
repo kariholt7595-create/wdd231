@@ -557,6 +557,10 @@ dialog button {
     text-align: center;
 }
 
+#cards {
+    min-height: 3000px;
+}
+
 #cards section {
     border: 1px solid var(--primary-color);
     border-radius: 10px;

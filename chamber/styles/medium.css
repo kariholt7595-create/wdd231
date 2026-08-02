@@ -1,9 +1,13 @@
 @media screen and (min-width: 38rem) {
+    #cards {
+        min-height: 2000px;
+    }
+
     #cards section {
-        grid-template-areas: 
-        "image title"
-        "image description"
-        "image address";
+        grid-template-areas:
+            "image title"
+            "image description"
+            "image address";
 
         grid-template-columns: 1.1fr 1fr;
         column-gap: 1rem
@@ -17,7 +21,7 @@
         transform: scale(1.05);
     }
 
-    #cards h2{
+    #cards h2 {
         margin: 0;
     }
 
