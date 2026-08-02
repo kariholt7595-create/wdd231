@@ -230,7 +230,7 @@ footer p {
 
 .hero {
     position: relative;
-    margin-bottom: 10.5rem;
+    margin-bottom: 6.5rem;
 }
 
 .hero img {
@@ -242,7 +242,7 @@ footer p {
 .hero-callout {
     position: absolute;
     left: 50%;
-    bottom: -10rem;
+    bottom: -5rem;
     transform: translateX(-50%);
     width: 88%;
     max-width: 320px;
@@ -566,11 +566,11 @@ dialog button {
     overflow: hidden;
 
     display: grid;
-    grid-template-areas: 
-    "title"
-    "image"
-    "description"
-    "address";
+    grid-template-areas:
+        "title"
+        "image"
+        "description"
+        "address";
 }
 
 #cards button {
@@ -590,7 +590,7 @@ dialog button {
     background-color: var(--secondary-color);
 }
 
-#cards h2{
+#cards h2 {
     grid-area: title;
     text-align: center;
 }
