@@ -101,4 +101,10 @@
         margin: 0 auto;
     }
 
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
 }
