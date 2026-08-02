@@ -2,7 +2,7 @@ import {places} from "../data/places.mjs";
 
 const cards = document.querySelector("#cards");
 
-places.forEach((place) => {
+places.forEach((place, index) => {
     const card = document.createElement("section");
     const title = document.createElement("h2");
     const figure = document.createElement("figure");
@@ -16,7 +16,13 @@ places.forEach((place) => {
     description.textContent = place.description;
     image.src = place.photoUrl;
     image.alt = place.name;
-    image.loading = "lazy";
+
+    if (index === 0) {
+        image.fetchPriority = "high";
+    } else {
+        image.loading = "lazy";
+    }
+    
     button.textContent = "Learn More";
 
     figure.appendChild(image);
