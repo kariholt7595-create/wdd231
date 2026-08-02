@@ -119,8 +119,14 @@ h1 {
     height: auto;
 }
 
+.card.courses {
+    background-color: transparent;
+    border: none;
+}
+
 #course-list {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 1rem;
 }
@@ -207,6 +213,7 @@ footer {
     display: flex;
     justify-content: center;
     column-gap: 8px;
+    transform: translateY(-7px);
 }
 
 .social a {
