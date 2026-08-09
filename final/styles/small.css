@@ -1,0 +1,323 @@
+/* Google Fonts
+   Poppins - Headings
+   Open Sans - Body
+*/
+
+:root {
+    --primary-color: #255D6B;
+    --secondary-color: #356060;
+    --background-color: #F6F4EF;
+
+    --accent-color: #773585;
+    --accent-dark: #602972;
+
+    --heading-color: #411B52;
+
+    --text-color: #333333;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* *************************** Header and Navigation*********************** */
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    color: var(--heading-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 70px 1fr 44px;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--background-color);
+    color: var(--heading-color);
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+header span {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#menu-button {
+    width: 44px;
+    height: 44px;
+    color: var(--accent-dark);
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#menu-button::before {
+    content: "☰";
+}
+
+#menu-button.open::before {
+    content: "✕";
+}
+
+nav {
+    display: none;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+nav a.active {
+    background-color: var(--accent-dark);
+    font-weight: bold;
+}
+
+nav.open {
+    display: block;
+}
+
+/* *************************** Hero *********************** */
+.hero {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(65, 27, 82, 0.85);
+    color: var(--white);
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.hero-button {
+    position: absolute;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    bottom: 1.5rem;
+    right: 3rem;
+}
+
+.hero-button:hover,
+.button:hover {
+    background-color: var(--accent-dark);
+}
+
+/* *************************** Intro *********************** */
+.intro {
+    padding: 1rem;
+}
+
+.intro p {
+    margin-top: .75rem
+}
+
+/* *************************** Cards *********************** */
+.card {
+    background-color: var(--white);
+    padding: 1rem;
+    margin: 0;
+    border-radius: .75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+    border-top: 6px solid var(--accent-color);
+    min-height: 190px;
+}
+
+.card-container {
+    display: grid;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+}
+
+.card:nth-child(2) {
+    border-top-color: var(--primary-color);
+}
+
+.card:nth-child(3) {
+    border-top-color: var(--secondary-color);
+}
+
+.card:nth-child(4) {
+    border-top-color: var(--accent-dark);
+}
+
+.card:nth-child(5) {
+    border-top-color: var(--primary-color);
+}
+
+/* *************************** Footer *********************** */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+.development-info {
+    display: grid;
+    gap: .25rem;
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer a:hover {
+    color: var(--background-color);
+}
+
+.development-info p {
+    margin: .25rem 0;
+}
+
+/* *************************** Quick activities page *********************** */
+.page-intro {
+    padding: 1rem;
+    text-align: center;
+}
+
+.page-intro p {
+    margin-top: 0.5rem;
+}
+
+.activity-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+}
+
+.activity-filters button {
+    background-color: var(--heading-color);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+    padding: .75rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.activity-filters button:hover {
+    background-color: var(--accent-color);
+}
+
+#activity-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem 1.5rem;
+}
+
+.activity-card {
+    min-width: 0;
+    min-height: 320px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.activity-card h2 {
+    margin: 0;
+    min-height: 8rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-card p {
+    margin: 0.75rem 0;
+}
+
+.activity-card button {
+    margin-top: auto;
+    height: 44px;
+    border-radius: .5rem;
+}
+
+.category-circle {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 1rem;
+}
+
+.activity-card.discover .category-circle {
+    background-color: var(--primary-color);
+}
+
+.activity-card.discover {
+    background-color: #e4eef0;
+}
+
+.activity-card.preserve .category-circle {
+    background-color: var(--accent-color);
+}
+
+.activity-card.preserve {
+    background-color: #eee4f1;
+}
+
+.activity-card.connect .category-circle {
+    background-color: var(--secondary-color);
+}
+
+.activity-card.connect {
+    background-color: #e6eeea;
+}

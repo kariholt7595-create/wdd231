@@ -30,10 +30,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/activities.js"></script>
 
 </head>
 
@@ -49,59 +46,32 @@
     </header>
 
     <nav id="navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="quick-activities.html">10-Minute Activities</a>
+        <a href="index.html">Home</a>
+        <a href="quick-activities.html" class="active">10-Minute Activities</a>
         <a href="find-your-way.html">Find Your Way</a>
     </nav>
 
     <main>
-        
-        <Section class="hero">
-            <h1>Discover | Preserve | Connect</h1>
-            <picture>
-                <source media="(min-width: 768px)" srcset="images/hero-large.webp">
-                <img src="images/hero-small.webp" alt="Old family record books" width="800" height="531"
-                    loading="eager">
-            </picture>
 
-            <a href="find-your-way.html" class="hero-button">Find Your Family History Style</a>
-        </Section>
-
-        <section class="intro">
-            <h2>Family History Is More Than Research</h2>
-            <p>Every record, photograph, story, memory, and discovery adds another piece to your family's story.</p>
+        <section class="page-intro">
+            <h1>A Few Minutes Can Make a Difference</h1>
+            <p>You don't need hours to make meaningful progress in family history. Choose a quick activity and start
+                with the time you have.</p>
         </section>
 
-        <section class="card-container">
-            <section class="card">
-                <h3>Discover Your Family</h3>
-                <p>Explore your family tree, follow record hints, and learn more about the people who came before you.
-                </p>
-            </section>
-
-            <section class="card">
-                <h3>Preserve Memories</h3>
-                <p>Save photographs, documents, stories, and memories so they can be shared with future generations</p>
-            </section>
-
-            <section class="card">
-                <h3>Connect With Family</h3>
-                <p>Talk with relatives, ask questions, and record stories that may never appear in an official record.
-                </p>
-            </section>
-
-            <section class="card">
-                <h3>Make a Difference in Minutes</h3>
-                <p>Use record hints and FamilySearch tools to make meaningful contributions even when you only have a
-                    few minutes.</p>
-            </section>
-
-            <section class="card">
-                <h3>Find Your Way</h3>
-                <p>Explore different ways to participate in family history and discover the activities that interest you
-                    most.</p>
-            </section>
+        <section class="activity-filters">
+            <button type="button" data-category="all">All</button>
+            <button type="button" data-category="discover">Discover</button>
+            <button type="button" data-category="preserve">Preserve</button>
+            <button type="button" data-category="connect">Connect</button>
         </section>
+
+        <section id="activity-cards"></section>
+
+        <dialog id="activity-dialog">
+            <button type="button" id="close-dialog" aria-label="Close dialog">X</button>
+            <div id="dialog-content"></div>
+        </dialog>
 
     </main>
 

@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Review and Attach a Record Hint",
+    "category": "discover",
+    "time": "5-10 minutes",
+    "description": "Review a suggested record and decide whether it belongs to your family member.",
+    "details": "Compare the names, dates, places, and relationships in the record with what you already know. If the information matches, attach the record so it can add sources and details to that person's profile."
+  },
+  {
+    "title": "Review a Possible Duplicate",
+    "category": "discover",
+    "time": "5-10 minutes",
+    "description": "Check whether two similar profiles may represent the same person.",
+    "details": "Compare names, dates, places, relatives, and sources before deciding whether the profiles are duplicates. Taking a few minutes to review duplicates can help keep the family tree accurate and organized."
+  },
+  {
+    "title": "Try FamilySearch Get Involved",
+    "category": "discover",
+    "time": "5-10 minutes",
+    "description": "Help improve historical records through quick FamilySearch Get Involved activities.",
+    "details": "Get Involved offers small tasks that can help make records easier for others to search and use. Choose an activity that fits the time you have and contribute a few minutes at a time."
+  },
+  {
+    "title": "Check the AI Research Assistant",
+    "category": "discover",
+    "time": "10+ minutes",
+    "description": "Review an AI research suggestion for a possible new person or connection.",
+    "details": "AI research suggestions can point you toward possible relatives or records, but suggestions are not always correct. Review the evidence carefully and verify names, dates, places, and relationships before adding anything to your family tree."
+  },
+  {
+    "title": "Look for Missing Information",
+    "category": "discover",
+    "time": "5-10 minutes",
+    "description": "Choose one person and look for a missing date, place, relationship, or source.",
+    "details": "A small gap can give you a clear place to begin. Look at the person's profile and see whether a birth date, death place, spouse, parent, child, or supporting source is missing."
+  },
+  {
+    "title": "Upload a Photo",
+    "category": "preserve",
+    "time": "5-10 minutes",
+    "description": "Add a family photo and connect it to the people pictured.",
+    "details": "Upload a family photograph, identify the people when you can, and add a short description. Even one photo can preserve something meaningful for future generations."
+  },
+  {
+    "title": "Preserve a Document",
+    "category": "preserve",
+    "time": "5-10 minutes",
+    "description": "Save a scanned letter, certificate, recipe, journal page, or other family document.",
+    "details": "Choose one document that helps tell your family's story. Upload or preserve a digital copy and include enough information that someone in the future will understand what it is and why it matters."
+  },
+  {
+    "title": "Write a Family Story",
+    "category": "preserve",
+    "time": "5-10 minutes",
+    "description": "Write down one short memory or family story before it is forgotten.",
+    "details": "A family story does not have to be long. Record one memory, experience, tradition, or detail about a relative that future family members might otherwise never know."
+  },
+  {
+    "title": "Record or Upload Audio",
+    "category": "preserve",
+    "time": "5-10 minutes",
+    "description": "Preserve a family member's voice, memory, or story as an audio recording.",
+    "details": "Record a short story, favorite memory, or personal message, or upload an audio recording you already have. Hearing someone's voice can add a personal connection that written records cannot."
+  },
+  {
+    "title": "Create a Memory Album",
+    "category": "preserve",
+    "time": "5-10 minutes",
+    "description": "Group related family memories together in an album.",
+    "details": "Create an album around a person, family, event, place, or topic. Adding even a few related photos, documents, or stories can make those memories easier to explore together."
+  },
+  {
+    "title": "Ask for a Favorite Family Recipe",
+    "category": "connect",
+    "time": "5-10 minutes",
+    "description": "Ask someone in your family to share a favorite recipe and the story connected to it.",
+    "details": "Find out who made the recipe, when your family usually served it, or why it became a favorite. Save both the recipe and a few details about the memories connected to it."
+  },
+  {
+    "title": "Ask About a Family Tradition",
+    "category": "connect",
+    "time": "5-10 minutes",
+    "description": "Ask a relative where one of your family's traditions came from.",
+    "details": "Choose a holiday, celebration, saying, activity, or other tradition and ask someone what they remember about its beginning. The answer may reveal a story you have never heard."
+  },
+  {
+    "title": "Find the Story Behind a Photo",
+    "category": "connect",
+    "time": "5-10 minutes",
+    "description": "Choose an old photo and ask someone what they know about it.",
+    "details": "Ask who is pictured, where the photo was taken, what was happening, or why the moment mattered. Add those details to the photo so the story is not separated from the image."
+  },
+  {
+    "title": "Visit a Family Cemetery",
+    "category": "connect",
+    "time": "Varies",
+    "description": "Find where family members are buried and, when practical, visit the cemetery.",
+    "details": "Locate a family burial place, learn who is buried there, and talk with relatives about those family members. If you visit, you might take a photo of a marker or record information that helps preserve the connection to that place."
+  },
+  {
+    "title": "Compare Family Resemblances",
+    "category": "connect",
+    "time": "5-10 minutes",
+    "description": "Look through family photos together and notice shared expressions or family traits.",
+    "details": "Compare old and new family photos and talk about similarities such as smiles, expressions, or other recognizable family traits. The goal is simply to spark conversation and connection across generations."
+  }
+]
