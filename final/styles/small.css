@@ -345,11 +345,6 @@ footer a:hover {
 }
 
 /* *************************** Find your way page *********************** */
-.page-intro {
-    text-align: center;
-    padding: 1.5rem 1rem;
-}
-
 .form-intro {
     max-width: 800px;
     margin: 2rem auto;
