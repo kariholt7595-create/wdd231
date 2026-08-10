@@ -55,6 +55,7 @@ function displayActivities(activities) {
         card.appendChild(categoryCircle);
         card.appendChild(title);
         card.appendChild(time);
+        card.appendChild(description);
         card.appendChild(learnMore);
 
         activityCards.appendChild(card);
