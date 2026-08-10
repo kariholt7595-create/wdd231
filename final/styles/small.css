@@ -387,3 +387,29 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: var(--accent-dark);
 }
+
+/* *************************** Results page *********************** */
+.results {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0.75rem 1rem 1.5rem;
+    text-align: center;
+}
+
+#style-result {
+    margin-top: .5rem;
+    padding: 1.5rem;
+    background-color: #e6eeea;
+    border-radius: 8px;
+}
+
+#style-result h2 {
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+}
+
+#style-result ul {
+    text-align: left;
+    max-width: 500px;
+    margin: 1rem auto 0;
+}
