@@ -414,3 +414,11 @@ form button[type="submit"]:hover {
     max-width: 500px;
     margin: 1rem auto 0;
 }
+
+/* *************************** Attributions page *********************** */
+.attributions {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    text-align: center;
+}
