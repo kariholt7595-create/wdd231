@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover your family history style and find activities that match your interests and the time you have available.">
+    <meta name="author" content="Karissa Holt">
+
+    <meta property="og:title" content="Find Your Way Into Family History">
+    <meta property="og:description"
+        content="Discover your family history style and find activities that match your interests and the time you have available.">
+    <meta property="og:image" content="https://kariholt7595-create.github.io/wdd231/final/images/hero-large.webp">
+    <meta property="og:url" content="https://kariholt7595-create.github.io/wdd231/final/find-your-way.html">
+    <meta property="og:type" content="website">
+
+    <title>Find Your Way | Your Way Into Family History</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/your-way-logo.webp" alt="Family tree with family standing beside a winding path" width="500"
+            height="501" fetchpriority="high">
+
+        <span>Your Way Into Family History</span>
+
+        <button id="menu-button" aria-label="Open navigation menu"></button>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="quick-activities.html">10-Minute Activities</a>
+        <a href="find-your-way.html" class="active">Find Your Way</a>
+    </nav>
+
+    <main>
+        <section class="page-intro">
+            <h1>Find Your Way</h1>
+            <p>
+                Family history can look different for everyone. Answer a few questions to find a place to start.
+            </p>
+        </section>
+
+        <section class="form-intro">
+            <h2>There Is No One Right Way to Do Family History</h2>
+
+            <p>
+                Some people love records, some love stories, some enjoy connecting with relatives, and others feel
+                especially drawn to temple work. Use this quick form to find a starting point that fits you.
+            </p>
+        </section>
+
+        <form action="results.html" method="get">
+            <fieldset>
+                <legend>What sounds most like you?</legend>
+
+                <label>
+                    <input type="radio" name="interest" value="records" required>I enjoy searching for records and clues
+                </label>
+
+                <label>
+                    <input type="radio" name="interest" value="memories">I enjoy photos, stories, and memories.
+                </label>
+
+                <label>
+                    <input type="radio" name="interest" value="family">I enjoy connecting with relatives.
+                </label>
+
+                <label>
+                    <input type="radio" name="interest" value="quick">I usually only have a few minutes at a time.
+                </label>
+
+                <label>
+                    <input type="radio" name="interest" value="technology">I like technology and online tools.
+                </label>
+
+                <label>
+                    <input type="radio" name="interest" value="temple">I want to prepare family names for temple
+                    ordinances.
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>How much time do you usually have to spend?</legend>
+
+                <select name="time" id="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="short">5-10 min</option>
+                    <option value="medium">15-30 min</option>
+                    <option value="long">More than 30 min</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>What sounds most enjoyable?</legend>
+
+                <label>
+                    <input type="checkbox" name="enjoy" value="clues">Solving clues and searching
+                </label>
+
+                <label>
+                    <input type="checkbox" name="enjoy" value="stories">Working with photos or stories
+                </label>
+
+                <label>
+                    <input type="checkbox" name="enjoy" value="family">Talking with relatives or doing something
+                    together
+                </label>
+
+                <label>
+                    <input type="checkbox" name="enjoy" value="temple">Preparing and taking family names to the temple
+                </label>
+            </fieldset>
+
+            <button type="submit">Find My Family History Style</button>
+        </form>
+
+
+    </main>
+
+    <footer>
+
+        <div class="development-info">
+            <p>WDD 231 Final Project</p>
+            <p>Karissa Holt</p>
+            <p>&copy; <span id="current-year"></span> Your Way Into Family History</p>
+            <p id="last-modified"></p>
+            <p><a href="YOUR-VIDEO-LINK">Project Video</a></p>
+            <p><a href="attributions.html">Attributions</a></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

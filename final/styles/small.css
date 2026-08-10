@@ -321,3 +321,69 @@ footer a:hover {
 .activity-card.connect {
     background-color: #e6eeea;
 }
+
+.page-cta {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--accent-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-dark);
+}
+
+/* *************************** Find your way page *********************** */
+.page-intro {
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.form-intro {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #e6eeea;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+}
+
+form fieldset {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+form fieldset label {
+    display: block;
+    margin: 0.75rem 0;
+}
+
+form button[type="submit"] {
+    display: block;
+    margin: 1.5rem auto;
+    padding: 0.75rem 1rem;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--accent-dark);
+}
